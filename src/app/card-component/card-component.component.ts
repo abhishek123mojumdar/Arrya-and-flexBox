@@ -7,17 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponentComponent implements OnInit {
   @Input()
-  public cardObject: { header: string; body: string } = null;
+  public cardObject: { header: string; body: string; id?: string } = null;
 
   constructor() {}
 
   ngOnInit() {}
 
   public clickOnButton(cardObject) {
-    console.log(
-      'card object with header ',
-      cardObject.header,
-      '  has been selected'
-    );
+    alert(cardObject.id);
   }
 }
