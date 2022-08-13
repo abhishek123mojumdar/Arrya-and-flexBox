@@ -1,5 +1,7 @@
 <div class="card">
-  <div class="card-heading">{{ cardObject.header }}</div>
+  <div class="card-heading">{{ cardObject.header | uppercase }}</div>
   <div class="card-body">{{ cardObject.body }}</div>
-  <button (click)="clickOnButton(cardObject)">Get header</button>
+  <div class="card-footer">
+    <button (click)="clickOnButton(cardObject)">Get Id</button>
+  </div>
 </div>

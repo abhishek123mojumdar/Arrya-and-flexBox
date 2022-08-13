@@ -4,14 +4,20 @@
   justify-content: space-evenly;
   align-items: flex-start;
   width: 300px;
-  height: 200px;
+  height: 250px;
   box-shadow: 0 2px 4px grey;
   padding: 2rem;
   margin: 2rem;
 }
 
 .card-body {
+  height: 110px;
   overflow-y: auto;
+}
+
+.card-heading {
+  font-weight: 800;
+  text-decoration: underline;
 }
 
 button {
