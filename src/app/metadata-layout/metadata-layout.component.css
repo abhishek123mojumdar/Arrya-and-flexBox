@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 100vw;
+  background-color: grey;
+}
+
+.cardContainer {
+  display: flex;
+}
+
+.card {
+  height: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 2px 4px black;
+  margin: 1rem;
+}
+
+.card#filterCard {
+  flex: none;
+  color: black;
+  flex-direction: row;
+}
+
+button {
+  width: 20px;
+  background-color: blue;
+  padding: 1rem;
+  margin: 1rem;
+}

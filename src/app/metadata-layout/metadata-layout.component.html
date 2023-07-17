@@ -1,0 +1,50 @@
+<ng-container *ngIf="metadata.type === 'Volumes'">
+  <h1>{{ metadata.type }}</h1>
+  <ng-container *ngIf="metadata.supoortedFeatures">
+    <div class="container">
+      <div class="cardContainer">
+        <div class="card">
+          {{ metadata.supoortedFeatures.graph.type }}
+        </div>
+        <div class="card">
+          {{ metadata.supoortedFeatures.graph.type }}
+        </div>
+      </div>
+      <div class="card" id="filterCard" style="height:50px;backgroundColor:red">
+        <select
+          name=""
+          id=""
+          *ngIf="metadata.supoortedFeatures.table.filter.dropDown"
+        ></select>
+        <div
+          *ngFor="
+            let btn of metadata.supoortedFeatures.table.filter.segmentControl
+          "
+        >
+          <p style="color:black">{{ btn }}</p>
+        </div>
+        <button *ngIf="metadata.supoortedFeatures.table.filter.formFilter">
+          Form filter
+        </button>
+        <button *ngIf="metadata.supoortedFeatures.table.collectDiagnostics">
+          collectDiagnostics
+        </button>
+      </div>
+      <table>
+        <tr>
+          <th>{{ metadata.supoortedFeatures.table.columns.id.name }}</th>
+          <th>
+            {{ metadata.supoortedFeatures.table.columns.namespace.name }}
+          </th>
+          <th>
+            {{ metadata.supoortedFeatures.table.columns.storage.name }}
+          </th>
+          <th>
+            {{ metadata.supoortedFeatures.table.columns.state.name }}
+          </th>
+          <th>{{ metadata.supoortedFeatures.table.columns.io.name }}</th>
+        </tr>
+      </table>
+    </div>
+  </ng-container>
+</ng-container>

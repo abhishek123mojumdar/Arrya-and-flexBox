@@ -6,7 +6,7 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  public cardData = [
+  public metadata = [
     {
       id: '1',
       header: 'abcd',
